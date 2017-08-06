@@ -21,7 +21,15 @@ exports.config = {
   },
 
   onPrepare: function() {
-   setTimeout(function() {
+    var jasmineReporters = require('jasmine-reporters');
+    var junitReporter = new jasmineReporters.JUnitXmlReporter({
+      // setup the output path for the junit reports
+      savePath: 'output/',
+      consolidateAll: true,
+    });
+    jasmine.getEnv().addReporter(junitReporter);
+    
+    setTimeout(function() {
        browser.driver.executeScript(function() {
            return {
                width: window.screen.availWidth,

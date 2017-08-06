@@ -11,6 +11,8 @@ describe('sample test', function() {
     page.iptSecond.sendKeys('4');
     page.btnGo.click();
 
+
+
     var n = element(by.xpath('/html/body/div/table/tbody/tr/td[3]'));
     n.getText();
 
