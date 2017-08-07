@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="login test" timestamp="2017-08-07T11:44:57" hostname="localhost" time="4.47" errors="0" tests="2" skipped="1" disabled="0" failures="1">
-  <testcase classname="login test" name="login_positive" time="4.469">
-   <failure type="exception" message="Failed: No element found using locator: By(link text, Logout)"><![CDATA[NoSuchElementError: No element found using locator: By(link text, Logout)
-    at elementArrayFinder.getWebElements.then (/usr/local/lib/node_modules/protractor/lib/element.ts:851:17)
-    at ManagedPromise.invokeCallback_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1366:14)
-    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2970:14)
-    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2953:27)
-    at asyncRun (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2813:27)
-    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:676:7
-    at process._tickCallback (internal/process/next_tick.js:109:7)Error
-    at ElementArrayFinder.applyAction_ (/usr/local/lib/node_modules/protractor/lib/element.ts:482:23)
-    at ElementArrayFinder.(anonymous function).args [as click] (/usr/local/lib/node_modules/protractor/lib/element.ts:96:21)
-    at ElementFinder.(anonymous function).args [as click] (/usr/local/lib/node_modules/protractor/lib/element.ts:873:14)
-    at UserContext.<anonymous> (/Users/srinivasaraoimandi/Documents/Git/protractor/specs/login_spec.js:15:36)
-    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
-    at new ManagedPromise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1067:7)
-    at ControlFlow.promise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2396:12)
-    at schedulerExecute (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
-    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2970:14)
-    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2953:27)
-From: Task: Run it("login_positive") in control flow
-    at UserContext.<anonymous> (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
-    at attempt (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4071:26)
-    at QueueRunner.run (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3991:20)
-    at runNext (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4031:20)
-    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4038:13
-    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3946:9
-    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
-    at ControlFlow.emit (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
-    at ControlFlow.shutdown_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2565:10)
-    at shutdownTask_.MicroTask (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2490:53)
-From asynchronous test: 
-Error
-    at Suite.<anonymous> (/Users/srinivasaraoimandi/Documents/Git/protractor/specs/login_spec.js:10:3)
-    at addSpecsToSuite (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1013:25)
-    at Env.describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:980:7)
-    at describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4163:18)
-    at Object.<anonymous> (/Users/srinivasaraoimandi/Documents/Git/protractor/specs/login_spec.js:3:1)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)]]>
-   </failure>
-  </testcase>
-  <testcase classname="login test" name="login_negative" time="0.001">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
+ <testsuite name="login test" timestamp="2017-08-07T14:17:30" hostname="localhost" time="7.816" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="login test" name="login_positive" time="6.18" />
+  <testcase classname="login test" name="login_negative" time="1.634" />
  </testsuite>
 </testsuites>
