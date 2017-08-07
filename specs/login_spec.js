@@ -2,11 +2,16 @@ var Login_Module = require('../pages/login.js');
 
 describe('login test', function() {
 
-  var page;
+  # mandatory objects for usage of snippets
+  var time_out = 10000;
   var EC;
+  var page;
+
+
 
   beforeEach(function() {
     page = new Login_Module();
+    # mandatory to initiate for usage of snippets
     EC = protractor.ExpectedConditions;
     browser.get("http://www.way2automation.com/angularjs-protractor/registeration/#/login");
   });
@@ -16,7 +21,7 @@ describe('login test', function() {
     page.iptPassword.sendKeys('password');
     page.iptDescription.sendKeys('This is a positive scenario');
     page.btnLogin.click();
-    browser.wait(EC.presenceOf(page.hlLogout), 10000);
+    browser.wait(EC.presenceOf(page.hlLogout), time_out);
     page.hlLogout.click();
   });
 

@@ -6,7 +6,7 @@ module.exports = function(){
 
 
   browser.wait(EC.presenceOf(object), wait_time);
-
+  
 
 
 }

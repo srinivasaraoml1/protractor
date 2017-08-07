@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="login test" timestamp="2017-08-07T15:17:24" hostname="localhost" time="13.868" errors="0" tests="2" skipped="0" disabled="0" failures="1">
-  <testcase classname="login test" name="login_positive" time="7.405" />
-  <testcase classname="login test" name="login_negative" time="6.462">
+ <testsuite name="login test" timestamp="2017-08-07T22:16:48" hostname="localhost" time="13.43" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="login test" name="login_positive" time="6.913" />
+  <testcase classname="login test" name="login_negative" time="6.517">
    <failure type="exception" message="Failed: No element found using locator: By(link text, Logout)"><![CDATA[NoSuchElementError: No element found using locator: By(link text, Logout)
     at WebDriverError (C:\Users\sslindia\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:27:5)
     at NoSuchElementError (C:\Users\sslindia\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:168:5)
