@@ -1,0 +1,134 @@
+Expected conditions
+
+#not   : ecnot
+and   : ecand
+or    : ecor
+#alert : ecalert
+#clickable : ecetbc
+#textin element: ectbpe
+#textin element value: ectbpev
+#titlecontains : ectc
+#titleis : ecti
+#urlcontains: ecurlcon
+#urlis: ecurlis
+#presence of: ecpo
+#stalenes of: ecso
+#visibility of: ecvo
+#invisibility of: ecivo
+#element to be selected: ecetbs
+
+
+Paste the below code in the snippet of Atom for better usage and also install protractor jasmine package for atom
+<<!------------------------------------------------!>>
+'.source.js, .source.ts':
+
+# Protractor wait
+  'Wait Setup':
+    prefix: 'setupwait'
+    body:"""
+    var EC;
+    var time_out = 1000;
+    EC = protractor.ExpectedConditions;
+    """
+  'browser wait':
+    prefix:'bwait'
+    body:"""
+    browser.wait(condition, time_out);
+    """
+
+  'expected conditions not':
+    prefix:'ecnot'
+    body:"""
+    EC.not(element_or_contition)
+    """
+
+  'expected conditions and':
+    prefix:'ecand'
+    body:"""
+    EC.and(element1, element2)
+    """
+
+  'expected conditions or':
+    prefix:'ecor'
+    body:"""
+    EC.or(element1, element2)
+    """
+
+  'expected conditions alert is present':
+    prefix:'ecalert'
+    body:"""
+    EC.alertIsPresent()
+    """
+
+  'expected conditions element to be clickable':
+    prefix:'ecetbc'
+    body:"""
+    EC.elementToBeClickable(element)
+    """
+
+  'expected conditions text to be present in element':
+    prefix:'ectbpe'
+    body:"""
+    EC.textToBePresentInElement(element, 'text_to_present')
+    """
+
+  'expected conditions text to be present in element value':
+    prefix:'ectbpev'
+    body:"""
+    EC.textToBePresentInElementValue(element, 'text_to_present')
+    """
+
+  'expected conditions title contains':
+    prefix:'ectc'
+    body:"""
+    EC.titleContains('text_to_present')
+    """
+
+  'expected conditions title is':
+    prefix:'ecti'
+    body:"""
+    EC.titleIs('text_to_present')
+    """
+
+  'expected conditions url contains':
+    prefix:'ecurlcon'
+    body:"""
+    EC.urlContains('text_to_present')
+    """
+
+  'expected conditions url is':
+    prefix:'ecurlis'
+    body:"""
+    EC.urlIs('text_to_present')
+    """
+
+  'expected conditions presence of':
+    prefix:'ecpo'
+    body:"""
+    EC.presenceOf(element)
+    """
+
+  'expected conditions staleness of':
+    prefix:'ecso'
+    body:"""
+    EC.stalenessOf(element)
+    """
+
+  'expected conditions visibility of':
+    prefix:'ecvo'
+    body:"""
+    EC.visibilityOf(element)
+    """
+
+  'expected conditions invisibility of':
+    prefix:'ecivo'
+    body:"""
+    EC.invisibilityOf(element)
+    """
+
+  'expected conditions element to be selected':
+    prefix:'ecetbs'
+    body:"""
+    EC.elementToBeSelected(element)
+    """
+<<!------------------------------------------------!>>
