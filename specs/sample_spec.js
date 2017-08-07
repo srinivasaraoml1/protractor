@@ -16,6 +16,6 @@ describe('sample test', function() {
     var n = element(by.xpath('/html/body/div/table/tbody/tr/td[3]'));
     n.getText();
 
-    expect(n.getText()).toEqual('7');
+    expect(n.getText()).toEqual('4');
   });
   });

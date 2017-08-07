@@ -17,6 +17,7 @@ exports.config = {
 
   suites: {
     test: 'specs/sample_spec.js',
+    login: 'specs/login_spec.js',
     reg: 'specs/*_spec.js',
   },
 
@@ -28,7 +29,7 @@ exports.config = {
       consolidateAll: true,
     });
     jasmine.getEnv().addReporter(junitReporter);
-    
+
     setTimeout(function() {
        browser.driver.executeScript(function() {
            return {
