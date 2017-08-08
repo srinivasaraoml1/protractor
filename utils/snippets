@@ -1,5 +1,4 @@
 Expected conditions
-
 #not   : ecnot
 and   : ecand
 or    : ecor
@@ -18,9 +17,33 @@ or    : ecor
 #element to be selected: ecetbs
 
 
+
 Paste the below code in the snippet of Atom for better usage and also install protractor jasmine package for atom
 <<!------------------------------------------------!>>
 '.source.js, .source.ts':
+
+# page object format, functionality is same as HashMap
+  'Page Object format':
+    prefix: 'pageobject'
+    body: """
+    module.exports = {
+      }
+    }
+    """
+   'Import a module':
+    prefix: 'importmod'
+    body: """
+    var sample_nam = require('path to the module to be imported[../pages/multiform.js]');
+    """
+# Method format
+  'Create a method':
+    prefix: 'createfunc'
+    body: """
+    give_a_function_name : function (parameters) {
+      var xp;
+      return xp;
+    }
+    """
 
 # Protractor wait
   'Wait Setup':
