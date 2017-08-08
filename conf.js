@@ -14,10 +14,14 @@ exports.config = {
   // protractor is called.
   //specs: ['specs/sample_spec.js'],
   specs: ['specs/*_spec.js'],
+  helpers: ["../node_modules/jasmine-expect/index.js"],
+  stopSpecOnExpectationFailure: false,
+  random: false,
 
   suites: {
     test: 'specs/sample_spec.js',
     login: 'specs/login_spec.js',
+    form: 'specs/form_spec.js',
     reg: 'specs/*_spec.js',
   },
 
