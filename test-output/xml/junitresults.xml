@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="sample test" timestamp="2017-08-08T15:43:06" hostname="localhost" time="5.948" errors="0" tests="1" skipped="0" disabled="0" failures="1">
-  <testcase classname="sample test" name="test_1" time="5.945">
+ <testsuite name="angularjs homepage" timestamp="2017-08-08T17:07:30" hostname="localhost" time="18.019" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="angularjs homepage" name="should greet the named user" time="10.779" />
+ </testsuite>
+ <testsuite name="angularjs homepage.todo list" timestamp="2017-08-08T17:07:41" hostname="localhost" time="7.24" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="angularjs homepage.todo list" name="should list todos" time="3.65" />
+  <testcase classname="angularjs homepage.todo list" name="should add a todo" time="3.589" />
+ </testsuite>
+ <testsuite name="form" timestamp="2017-08-08T17:07:48" hostname="localhost" time="3.547" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="form" name="filling form" time="3.547" />
+ </testsuite>
+ <testsuite name="login test" timestamp="2017-08-08T17:07:51" hostname="localhost" time="5.669" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="login test" name="login_positive" time="3.42" />
+  <testcase classname="login test" name="login_negative" time="2.247" />
+ </testsuite>
+ <testsuite name="sample test" timestamp="2017-08-08T17:07:57" hostname="localhost" time="3.846" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="sample test" name="test_1" time="3.83">
    <failure type="toEqual" message="Expected &apos;7&apos; to equal &apos;4&apos;."><![CDATA[Error: Failed expectation
     at Object.<anonymous> (C:\Users\sslindia\Documents\Git\protractor\specs\sample_spec.js:19:25)
     at C:\Users\sslindia\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
