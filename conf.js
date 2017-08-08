@@ -5,16 +5,17 @@ exports.config = {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome',
-    // 'chromeOptions': {
-    // 'args': ['--load-extension=' + './blazemeter/plugin/BlazeMeter---The-Load-Testing-Cloud_v.crx']
-    // }
+    'chromeOptions': {
+    'args': ['start-fullscreen']
+    //['--load-extension=' + './blazemeter/plugin/BlazeMeter---The-Load-Testing-Cloud_v.crx']
+    }
+
   },
 
   // Framework to use. Jasmine is recommended.
-  framework: 'jasmine',
+  framework: 'jasmine2',
 
-  // Spec patterns are relative to the current working directory when
-  // protractor is called.
+  // Spec patterns are relative to the current working directory when protractor is called.
   //specs: ['specs/sample_spec.js'],
   specs: ['specs/*_spec.js'],
   helpers: ["../node_modules/jasmine-expect/index.js"],
@@ -47,21 +48,14 @@ exports.config = {
          fixedScreenshotName: false,
        })
      );
-
-    setTimeout(function() {
-       browser.driver.executeScript(function() {
-           return {
-               width: window.screen.availWidth,
-               height: window.screen.availHeight
-           };
-       }).then(function(result) {
-           browser.driver.manage().window().setSize(result.width, result.height);
-       });
-   });
 },
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 30000,
+    showColors : true,
+    isVerbose : true,
+    realtimeFailure : true,
+    includeStackTrace : true
   }
 };
