@@ -26,13 +26,24 @@ exports.config = {
   },
 
   onPrepare: function() {
+
     var jasmineReporters = require('jasmine-reporters');
     var junitReporter = new jasmineReporters.JUnitXmlReporter({
       // setup the output path for the junit reports
-      savePath: 'output/',
+      savePath: 'test-output/xml',
       consolidateAll: true,
     });
     jasmine.getEnv().addReporter(junitReporter);
+
+    var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+    jasmine.getEnv().addReporter( new Jasmine2HtmlReporter({
+         savePath: 'test-output/html',
+         screenshotsFolder: 'screenshots',
+         takeScreenshots: true,
+         takeScreenshotsOnlyOnFailures: true,
+         fixedScreenshotName: false,
+       })
+     );
 
     setTimeout(function() {
        browser.driver.executeScript(function() {

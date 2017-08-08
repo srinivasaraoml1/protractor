@@ -12,12 +12,11 @@ describe('form', function() {
     //page = new multi_form();
   });
 
-  it('test1', function() {
+  it('filling form', function() {
       browser.wait(EC.visibilityOf(page.iptName), time_out);
       page.iptName.sendKeys('Sandy');
       page.iptEmail.sendKeys('Sandy@gmail.com');
       page.btnNextSection.click();
-      browser.wait(EC.visibilityOf(page.btnNextSection), time_out);
-      page.getElement('I like PS4').click();
+      //browser.wait(EC.visibilityOf(page.btnNextSection), time_out);
   });
 });
