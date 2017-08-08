@@ -4,7 +4,10 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    // 'chromeOptions': {
+    // 'args': ['--load-extension=' + './blazemeter/plugin/BlazeMeter---The-Load-Testing-Cloud_v.crx']
+    // }
   },
 
   // Framework to use. Jasmine is recommended.
@@ -26,7 +29,7 @@ exports.config = {
   },
 
   onPrepare: function() {
-
+    // Code for XML reports
     var jasmineReporters = require('jasmine-reporters');
     var junitReporter = new jasmineReporters.JUnitXmlReporter({
       // setup the output path for the junit reports
@@ -34,7 +37,7 @@ exports.config = {
       consolidateAll: true,
     });
     jasmine.getEnv().addReporter(junitReporter);
-
+    // Code for HTML reports
     var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
     jasmine.getEnv().addReporter( new Jasmine2HtmlReporter({
          savePath: 'test-output/html',
