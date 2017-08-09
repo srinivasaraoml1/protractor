@@ -32,7 +32,7 @@ Paste the below code in the snippet of Atom for better usage and also install pr
    'Import a module':
     prefix: 'importmod'
     body: """
-    var sample_nam = require(protractor.basePath + 'path to the module to be imported[../pages/multiform.js]');
+    var sample_nam = require(protractor.basePath + 'path to the module to be imported[/pages/multiform.js]');
     """
 # Method format
   'Create a method':
