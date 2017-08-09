@@ -1,7 +1,6 @@
  // An example configuration file.
 exports.config = {
   directConnect: true,
-
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome',
@@ -9,19 +8,15 @@ exports.config = {
     'args': ['start-fullscreen']
     //['--load-extension=' + './blazemeter/plugin/BlazeMeter---The-Load-Testing-Cloud_v.crx']
     }
-
   },
-
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine2',
-
   // Spec patterns are relative to the current working directory when protractor is called.
   //specs: ['specs/sample_spec.js'],
   specs: ['specs/*_spec.js'],
   helpers: ["../node_modules/jasmine-expect/index.js"],
   stopSpecOnExpectationFailure: false,
   random: false,
-
   suites: {
     test: 'specs/sample_spec.js',
     login: 'specs/login_spec.js',
@@ -50,7 +45,7 @@ exports.config = {
          fixedScreenshotName: false,
        })
      );
-},
+   },
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
