@@ -27,9 +27,11 @@ exports.config = {
     login: 'specs/login_spec.js',
     form: 'specs/form_spec.js',
     reg: 'specs/*_spec.js',
+    phptravels: 'specs/phptravels/*spec.js',
   },
 
   onPrepare: function() {
+    protractor.basePath = __dirname;
     // Code for XML reports
     var jasmineReporters = require('jasmine-reporters');
     var junitReporter = new jasmineReporters.JUnitXmlReporter({
