@@ -121,6 +121,14 @@
 		"description": "creates browser get"
 	},
 
+	"Browser synchronization": {
+		"prefix": "bsync",
+		"body": [
+			"browser.ignoreSynchronization = true|false;"
+		],
+		"description": "creates synchronization"
+	},
+	
 	"Browser pause": {
 		"prefix": "brp",
 		"body": [

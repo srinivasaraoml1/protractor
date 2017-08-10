@@ -3,9 +3,12 @@ exports.config = {
   directConnect: true,
   params: {
     login: {
+      baseurl: 'http://www.way2automation.com/angularjs-protractor/registeration/#/login',
+    },
+    phptravels: {
       baseurl: 'http://www.phptravels.net/',
-      username: 'default',
-      password: 'default'
+      username: 'user@phptravels.com',
+      password: 'demouser'
     }
   },
   // Capabilities to be passed to the webdriver instance.

@@ -7,7 +7,7 @@ describe('login test', function() {
   var page;
 
   beforeEach(function() {
-    browser.get("http://www.way2automation.com/angularjs-protractor/registeration/#/login");
+    browser.get(browser.params.login.baseurl);
     page = new Login_Module();
     // mandatory to initiate for usage of snippets
     EC = protractor.ExpectedConditions;
