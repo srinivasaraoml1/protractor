@@ -399,8 +399,9 @@
 		"description": "creates element by xpath"
 	},
 
-	
-	// Locators All
+	/*
+	* Locators All
+	*/
 	"All Element by id": {
 		"prefix": "eabi",
 		"body": [
@@ -628,5 +629,160 @@
 			"EC.elementToBeSelected(element);"
 		],
 		"description": "Creates wait for to be selected"
+	},
+
+	/*
+	* Matchers
+	*/
+	"expect": {
+		"prefix": "expect",
+		"body": [
+			"expect()"
+		],
+		"description": "expect"
+	},
+
+	"to be": {
+		"prefix": "tb",
+		"body": [
+			".to­Be(null | true | false)"
+		],
+		"description": "to be"
+	},
+
+	"to not be": {
+		"prefix": "tnb",
+		"body": [
+			".toNot­Be(null | true | false)"
+		],
+		"description": "to be"
+	},
+
+	"to equal": {
+		"prefix": "te",
+		"body": [
+			".toEqual(value)"
+		],
+		"description": "to equal"
+	},
+
+	"to not equal": {
+		"prefix": "tne",
+		"body": [
+			".toNotEqual(value)"
+		],
+		"description": "to not equal"
+	},
+
+	"to match": {
+		"prefix": "tm",
+		"body": [
+			".toMat­ch(regex | string)"
+		],
+		"description": "to match"
+	},
+
+	"to not match": {
+		"prefix": "tnm",
+		"body": [
+			".toNotMat­ch(regex | string)"
+		],
+		"description": "to not match"
+	},
+
+	"to be defined": {
+		"prefix": "tbdef­ine­d",
+		"body": [
+			".toBe­Def­ine­d()"
+		],
+		"description": "to be defined"
+	},
+
+	"to be undefined": {
+		"prefix": "tbund­efi­ned",
+		"body": [
+			".toBe­Und­efi­ned()"
+		],
+		"description": "to be undefined"
+	},
+
+	"to be null": {
+		"prefix": "tbnul­l",
+		"body": [
+			".toBe­Nul­l()"
+		],
+		"description": "to be null"
+	},
+
+	"to be truthy": {
+		"prefix": "tbtru­thy",
+		"body": [
+			".toBe­Tru­thy()"
+		],
+		"description": "to be truthy"
+	},
+
+	"to be falsy": {
+		"prefix": "tbfal­sy",
+		"body": [
+			".toBe­Fal­sy()"
+		],
+		"description": "to be falsy"
+	},
+
+	"to contain": {
+		"prefix": "tc",
+		"body": [
+			".to­Con­tain(string)"
+		],
+		"description": "to contain"
+	},
+
+	"to not contain": {
+		"prefix": "tnc",
+		"body": [
+			".toNot­Con­tain(string)"
+		],
+		"description": "to not contain"
+	},
+
+	"to be less than": {
+		"prefix": "tbles­sth­an",
+		"body": [
+			".toBe­Les­sTh­an(number)"
+		],
+		"description": "to be less than"
+	},
+
+	"to be greater than": {
+		"prefix": "tbgre­ate­rth­an",
+		"body": [
+			".toBe­Gre­ate­rTh­an(number)"
+		],
+		"description": "to be greater than"
+	},
+
+	"to be NaN": {
+		"prefix": "tbnan",
+		"body": [
+			".toBe­NaN({number})"
+		],
+		"description": "to be NaN"
+	},
+
+	"to be close to": {
+		"prefix": "tbclo­seto",
+		"body": [
+			".toBe­Clo­seTo(number,precision)"
+		],
+		"description": "to be close to"
+	},
+
+	"to throw": {
+		"prefix": "tthrow",
+		"body": [
+			".toTh­row()"
+		],
+		"description": "to throw"
 	}
 }
