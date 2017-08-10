@@ -94,6 +94,14 @@
 	/*
 	*	Protractor Test Script Snippets
 	*/
+	"Import a module": {
+		"prefix": "importmod",
+		"body": [
+			"var sample_page_object_name = require(protractor.basePath + 'path to the module to be imported[/pages/multiform.js]');"
+		],
+		"description": "Import a module"
+	},
+	
 	"Print to console": {
 		"prefix": "log",
 		"body": [

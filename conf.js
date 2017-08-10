@@ -1,6 +1,13 @@
  // An example configuration file.
 exports.config = {
   directConnect: true,
+  params: {
+    login: {
+      baseurl: 'http://www.phptravels.net/',
+      username: 'default',
+      password: 'default'
+    }
+  },
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome',
