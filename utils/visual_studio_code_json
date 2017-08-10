@@ -1,0 +1,632 @@
+{
+/*
+	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	/*
+	*	Page Object Snippets
+	*/
+	"Page Object Generator": {
+		"prefix": "pageobject",
+		"body": [
+			"module.exports = {",
+				"",
+				"};"
+		],
+		"description": "page object format for protractor"
+	},
+
+	"Create a function": {
+		"prefix": "createfunc",
+		"body": [
+			"give_a_function_name : function (parameters) {",
+				"var xp;",
+				"return xp;",
+				"}"
+		],
+		"description": "creates a function in a page object"
+	},
+
+	/*
+	*	Jasmine Blocks
+	*/
+    "Create a describe block": {
+		"prefix": "descblk",
+		"body": [
+			"describe('blah', function() {",
+				"",
+				"});"
+		],
+		"description": "create a describe block in test script"
+	},
+
+	"Create an it block": {
+		"prefix": "itblk",
+		"body": [
+			"it('should blah', function() {",
+				"",
+				"});"
+		],
+		"description": "create a describe block in test script"
+	},
+
+	"Create a before each block": {
+		"prefix": "beblk",
+		"body": [
+			"beforeEach(function() {",
+				"",
+				"});"
+		],
+		"description": "create a before each block in test script"
+	},
+
+	"Create an after each block": {
+		"prefix": "aeblk",
+		"body": [
+			"afterEach(function() {",
+				"",
+				"});"
+		],
+		"description": "create an after each block in test script"
+	},
+
+	"Create an thing block": {
+		"prefix": "thblk",
+		"body": [
+			"this.thing = function() {",
+				"",
+				"};"
+		],
+		"description": "create an after each block in test script"
+	},
+
+	/*
+	*	Protractor Test Script Snippets
+	*/
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "Log output to console"
+	},
+
+	/*
+	*	Browser
+	*/
+	"Browser get": {
+		"prefix": "brg",
+		"body": [
+			"browser.get();"
+		],
+		"description": "creates browser get"
+	},
+
+	"Browser pause": {
+		"prefix": "brp",
+		"body": [
+			"browser.pause();"
+		],
+		"description": "creates browser pause"
+	},
+
+	"Browser get location absolue url": {
+		"prefix": "brgla",
+		"body": [
+			"browser.getLocationAbsUrl();"
+		],
+		"description": "creates browser location absolute url"
+	},
+
+	"Browser set location": {
+		"prefix": "brsl",
+		"body": [
+			"browser.setLocation();"
+		],
+		"description": "creates browser set location"
+	},
+
+	"Browser get current location": {
+		"prefix": "brgc",
+		"body": [
+			"browser.getCurrentUrl();"
+		],
+		"description": "creates browser get current location"
+	},
+
+	"Browser add mock module": {
+		"prefix": "bram",
+		"body": [
+			"browser.addMockModule();"
+		],
+		"description": "creates browser add mock module"
+	},
+
+	"Browser clear mock module": {
+		"prefix": "brcm",
+		"body": [
+			"browser.clearMockModules();"
+		],
+		"description": "creates browser clear mock module"
+	},
+
+	"Browser Wait": {
+		"prefix": "brw",
+		"body": [
+			"browser.wait(condition, time_out);"
+		],
+		"description": "Creates browser wait"
+	},
+
+	/*
+	*	WebElement
+	*/
+	"Clear": {
+		"prefix": "clear",
+		"body": [
+			".clear();"
+		],
+		"description": "clear"
+	},
+
+	"Click": {
+		"prefix": "click",
+		"body": [
+			".click();"
+		],
+		"description": "click"
+	},
+
+	"Get Attribute": {
+		"prefix": "gatt",
+		"body": [
+			".getAttribute(value);"
+		],
+		"description": "get attribute"
+	},
+
+	"Get CSS Value": {
+		"prefix": "gcvalue",
+		"body": [
+			".getCssValue(stylePropertyName);"
+		],
+		"description": "get css value"
+	},
+
+	"Get Driver": {
+		"prefix": "gdriver",
+		"body": [
+			".getDriver();"
+		],
+		"description": "get driver"
+	},
+
+	"Get Inner HTML": {
+		"prefix": "gih",
+		"body": [
+			".getInnerHtml();"
+		],
+		"description": "get inner html"
+	},
+
+	"Get Outer HTML": {
+		"prefix": "goh",
+		"body": [
+			".getOuterHtml();"
+		],
+		"description": "get outer html"
+	},
+
+	"Get Location": {
+		"prefix": "glocation",
+		"body": [
+			".getLocation();"
+		],
+		"description": "get location"
+	},
+
+	"Get Size": {
+		"prefix": "gsize",
+		"body": [
+			".getSize();"
+		],
+		"description": "get size"
+	},
+
+	"Get Tag Name": {
+		"prefix": "gtagname",
+		"body": [
+			".getTagName();"
+		],
+		"description": "get tag name"
+	},
+
+	"Get Text": {
+		"prefix": "gtext",
+		"body": [
+			".getText();"
+		],
+		"description": "get text"
+	},
+
+	"is displayed": {
+		"prefix": "isdisplayed",
+		"body": [
+			".isDisplayed();"
+		],
+		"description": "is displayed"
+	},
+
+	"is element present": {
+		"prefix": "iselementpresent",
+		"body": [
+			".isElementPresent();"
+		],
+		"description": "is element present"
+	},
+
+	"is element enabled": {
+		"prefix": "isenabled",
+		"body": [
+			".isEnabled();"
+		],
+		"description": "is element enabled"
+	},
+
+	"is element selected": {
+		"prefix": "isselected",
+		"body": [
+			".isSelected();"
+		],
+		"description": "is element selected"
+	},
+
+	"skeys": {
+		"prefix": "skeys",
+		"body": [
+			".sendKeys();"
+		],
+		"description": "skeys"
+	},
+
+	"submit": {
+		"prefix": "submit",
+		"body": [
+			".submit();"
+		],
+		"description": "submit"
+	},
+
+	"to wire value": {
+		"prefix": "twvalue",
+		"body": [
+			".toWireValue();"
+		],
+		"description": "to wire value"
+	},
+
+	/*
+	*	Locators
+	*/
+	"Element by id": {
+		"prefix": "elbi",
+		"body": [
+			"element(by.id());"
+		],
+		"description": "creates element by id"
+	},
+
+	"Element by name": {
+		"prefix": "elbn",
+		"body": [
+			"element(by.name());"
+		],
+		"description": "creates element by name"
+	},
+
+	"Element by class name": {
+		"prefix": "elbcn",
+		"body": [
+			"element(by.className());"
+		],
+		"description": "creates element by class name"
+	},
+
+	"Element by deep css": {
+		"prefix": "elbdc",
+		"body": [
+			"element(by.deepCss());"
+		],
+		"description": "creates element by deep css"
+	},
+
+	"Element by link text": {
+		"prefix": "elblt",
+		"body": [
+			"element(by.linkText());"
+		],
+		"description": "creates element by link text"
+	},
+
+	"Element by button text": {
+		"prefix": "elbbt",
+		"body": [
+			"element(by.buttonText());"
+		],
+		"description": "creates element by button text"
+	},
+
+	"Element by css": {
+		"prefix": "elbc",
+		"body": [
+			"element(by.css());"
+		],
+		"description": "creates element by css"
+	},
+
+	"Element by model": {
+		"prefix": "elbm",
+		"body": [
+			"element(by.model());"
+		],
+		"description": "creates element by model"
+	},
+
+	"Element by binding": {
+		"prefix": "elbb",
+		"body": [
+			"element(by.binding());"
+		],
+		"description": "creates element by binding"
+	},
+
+	"Element by xpath": {
+		"prefix": "elbx",
+		"body": [
+			"element(by.xpath());"
+		],
+		"description": "creates element by xpath"
+	},
+
+	
+	// Locators All
+	"All Element by id": {
+		"prefix": "eabi",
+		"body": [
+			"element.all(by.id());"
+		],
+		"description": "creates all element by id"
+	},
+
+	"All Element by name": {
+		"prefix": "eabn",
+		"body": [
+			"element.all(by.name());"
+		],
+		"description": "creates all element by name"
+	},
+
+	"All Element by class name": {
+		"prefix": "eabcn",
+		"body": [
+			"element.all(by.className());"
+		],
+		"description": "creates all element by class name"
+	},
+
+	"All Element by deep css": {
+		"prefix": "eabdc",
+		"body": [
+			"element.all(by.deepCss());"
+		],
+		"description": "creates all element by deep css"
+	},
+
+	"All Element by link text": {
+		"prefix": "eablt",
+		"body": [
+			"element.all(by.linkText());"
+		],
+		"description": "creates all element by link text"
+	},
+
+	"All Element by button text": {
+		"prefix": "eabbt",
+		"body": [
+			"element.all(by.buttonText());"
+		],
+		"description": "creates all element by button text"
+	},
+
+	"All Element by css": {
+		"prefix": "eabc",
+		"body": [
+			"element.all(by.css());"
+		],
+		"description": "creates all element by css"
+	},
+
+	"ALl Element by model": {
+		"prefix": "eabm",
+		"body": [
+			"element.all(by.model());"
+		],
+		"description": "creates all element by model"
+	},
+
+	"All Element by binding": {
+		"prefix": "eabb",
+		"body": [
+			"element.all(by.binding());"
+		],
+		"description": "creates all element by binding"
+	},
+
+	"All Element by xpath": {
+		"prefix": "eabx",
+		"body": [
+			"element.all(by.xpath());"
+		],
+		"description": "creates all element by xpath"
+	},
+
+	"All Element by repeater": {
+		"prefix": "eabr",
+		"body": [
+			"element(by.repeater());"
+		],
+		"description": "creates all element by repeater"
+	},
+
+	/*
+	*	Wait
+	*/
+	"Wait Setup": {
+		"prefix": "setupwait",
+		"body": [
+			"var EC;",
+    		"var time_out = 1000;",
+    		"EC = protractor.ExpectedConditions;"
+		],
+		"description": "Creates wait parameters for the test script"
+	},
+
+	"Wait expected conditions not": {
+		"prefix": "ecnot",
+		"body": [
+			"EC.not(element_or_contition);"
+		],
+		"description": "Creates wait expected conditions not"
+	},
+
+	"Wait expected conditions and": {
+		"prefix": "ecand",
+		"body": [
+			"EC.and(element1, element2);"
+		],
+		"description": "Creates wait expected conditions and"
+	},
+
+	"Wait expected conditions or": {
+		"prefix": "ecor",
+		"body": [
+			"EC.or(element1, element2);"
+		],
+		"description": "Creates wait expected conditions or"
+	},
+
+	"expected conditions alert is present": {
+		"prefix": "ecalert",
+		"body": [
+			"EC.alertIsPresent();"
+		],
+		"description": "Creates wait for an alert"
+	},
+
+	"expected conditions element to be clickable": {
+		"prefix": "ecetbc",
+		"body": [
+			"EC.elementToBeClickable(element);"
+		],
+		"description": "Creates wait for an element to be clickable"
+	},
+
+	"expected conditions text to be present in an element": {
+		"prefix": "ectbpe",
+		"body": [
+			"EC.textToBePresentInElement(element, 'text_to_present');"
+		],
+		"description": "Creates wait for text to be present in an element"
+	},
+
+	"expected conditions text to be present in an element value": {
+		"prefix": "ectbpev",
+		"body": [
+			"EC.textToBePresentInElementValue(element, 'text_to_present');"
+		],
+		"description": "Creates wait for text to be present in an element value"
+	},
+
+	"expected conditions title contains": {
+		"prefix": "ectc",
+		"body": [
+			"EC.titleContains('text_to_present');"
+		],
+		"description": "Creates wait for title contains"
+	},
+
+	"expected conditions title is": {
+		"prefix": "ecti",
+		"body": [
+			"EC.titleIs('text_to_present');"
+		],
+		"description": "Creates wait for title is"
+	},
+
+	"expected conditions url contains": {
+		"prefix": "ecurlcon",
+		"body": [
+			"EC.urlContains('text_to_present');"
+		],
+		"description": "Creates wait for url contains"
+	},
+
+	"expected conditions url is": {
+		"prefix": "ecurlis",
+		"body": [
+			"EC.urlIs('text_to_present');"
+		],
+		"description": "Creates wait for url is"
+	},
+
+	"expected conditions presence of": {
+		"prefix": "ecpo",
+		"body": [
+			"EC.presenceOf(element);"
+		],
+		"description": "Creates wait for presence of"
+	},
+
+	"expected conditions staleness of": {
+		"prefix": "ecso",
+		"body": [
+			"EC.stalenessOf(element);"
+		],
+		"description": "Creates wait for staleness of"
+	},
+
+	"expected conditions visibility of": {
+		"prefix": "ecvo",
+		"body": [
+			"EC.visibilityOf(element);"
+		],
+		"description": "Creates wait for visibility of"
+	},
+
+	"expected conditions invisibility of": {
+		"prefix": "ecivo",
+		"body": [
+			"EC.invisibilityOf(element);"
+		],
+		"description": "Creates wait for invisibility of"
+	},
+
+	"expected conditions element to be selected": {
+		"prefix": "ecetbs",
+		"body": [
+			"EC.elementToBeSelected(element);"
+		],
+		"description": "Creates wait for to be selected"
+	}
+}
