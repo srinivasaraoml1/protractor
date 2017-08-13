@@ -191,7 +191,8 @@
 	"Clear": {
 		"prefix": "clear",
 		"body": [
-			".clear();"
+			//".clear();"
+			"clear();"
 		],
 		"description": "clear"
 	},
@@ -199,7 +200,8 @@
 	"Click": {
 		"prefix": "click",
 		"body": [
-			".click();"
+			//".click();"
+			"click();"
 		],
 		"description": "click"
 	},
@@ -207,7 +209,8 @@
 	"Get Attribute": {
 		"prefix": "gatt",
 		"body": [
-			".getAttribute(value);"
+			//".getAttribute(value);"
+			"getAttribute(value);"
 		],
 		"description": "get attribute"
 	},
@@ -215,7 +218,8 @@
 	"Get CSS Value": {
 		"prefix": "gcvalue",
 		"body": [
-			".getCssValue(stylePropertyName);"
+			//".getCssValue(stylePropertyName);"
+			"getCssValue(stylePropertyName);"
 		],
 		"description": "get css value"
 	},
@@ -223,7 +227,8 @@
 	"Get Driver": {
 		"prefix": "gdriver",
 		"body": [
-			".getDriver();"
+			//".getDriver();"
+			"getDriver();"
 		],
 		"description": "get driver"
 	},
@@ -231,7 +236,8 @@
 	"Get Inner HTML": {
 		"prefix": "gih",
 		"body": [
-			".getInnerHtml();"
+			//".getInnerHtml();"
+			"getInnerHtml();"
 		],
 		"description": "get inner html"
 	},
@@ -239,7 +245,8 @@
 	"Get Outer HTML": {
 		"prefix": "goh",
 		"body": [
-			".getOuterHtml();"
+			//".getOuterHtml();"
+			"getOuterHtml();"
 		],
 		"description": "get outer html"
 	},
@@ -247,7 +254,8 @@
 	"Get Location": {
 		"prefix": "glocation",
 		"body": [
-			".getLocation();"
+			//".getLocation();"
+			"getLocation();"
 		],
 		"description": "get location"
 	},
@@ -255,7 +263,8 @@
 	"Get Size": {
 		"prefix": "gsize",
 		"body": [
-			".getSize();"
+			//".getSize();"
+			"getSize();"
 		],
 		"description": "get size"
 	},
@@ -263,7 +272,8 @@
 	"Get Tag Name": {
 		"prefix": "gtagname",
 		"body": [
-			".getTagName();"
+			//".getTagName();"
+			"getTagName();"
 		],
 		"description": "get tag name"
 	},
@@ -271,7 +281,8 @@
 	"Get Text": {
 		"prefix": "gtext",
 		"body": [
-			".getText();"
+			//".getText();"
+			"getText();"
 		],
 		"description": "get text"
 	},
@@ -279,7 +290,8 @@
 	"is displayed": {
 		"prefix": "isdisplayed",
 		"body": [
-			".isDisplayed();"
+			//".isDisplayed();"
+			"isDisplayed();"
 		],
 		"description": "is displayed"
 	},
@@ -287,7 +299,8 @@
 	"is element present": {
 		"prefix": "iselementpresent",
 		"body": [
-			".isElementPresent();"
+			//".isElementPresent();"
+			"isElementPresent();"
 		],
 		"description": "is element present"
 	},
@@ -295,7 +308,8 @@
 	"is element enabled": {
 		"prefix": "isenabled",
 		"body": [
-			".isEnabled();"
+			//".isEnabled();"
+			"isEnabled();"
 		],
 		"description": "is element enabled"
 	},
@@ -303,7 +317,8 @@
 	"is element selected": {
 		"prefix": "isselected",
 		"body": [
-			".isSelected();"
+			//".isSelected();"
+			"isSelected();"
 		],
 		"description": "is element selected"
 	},
@@ -311,7 +326,8 @@
 	"skeys": {
 		"prefix": "skeys",
 		"body": [
-			".sendKeys();"
+			//".sendKeys();"
+			"sendKeys();"
 		],
 		"description": "skeys"
 	},
@@ -319,7 +335,8 @@
 	"submit": {
 		"prefix": "submit",
 		"body": [
-			".submit();"
+			//".submit();"
+			"submit();"
 		],
 		"description": "submit"
 	},
@@ -327,7 +344,8 @@
 	"to wire value": {
 		"prefix": "twvalue",
 		"body": [
-			".toWireValue();"
+			//".toWireValue();"
+			"toWireValue();"
 		],
 		"description": "to wire value"
 	},

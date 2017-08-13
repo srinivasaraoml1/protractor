@@ -1,16 +1,21 @@
-var page = require(protractor.basePath + '/pages/phptravels/phplogin.js');
+//var sample = require(protractor.basePath + '/TestBed/phplogin.js');
+var sample = require(protractor.basePath + '/Pages/phptravels/phplogin.js');
 
-describe('blah', function() {
+describe('main', function() {
+
 var EC;
+var page = sample;
 var time_out = 1000;
-EC = protractor.ExpectedConditions;
 
 beforeEach(function() {
-    browser.ignoreSynchronization = true;
-    browser.get(browser.params.phptravels.baseurl);
+    page = sample;
+    EC = protractor.ExpectedConditions;
 });
 
-it('load', function() {
-    
+it('login1', function() {
+    browser.get(browser.params.phptravels.baseurl);
+    page.btnMyAccount.click();
+    page.btnLogin.click();
 });
+
 });

@@ -33,6 +33,7 @@ exports.config = {
     form: 'specs/form_spec.js',
     reg: 'specs/*_spec.js',
     phptravels: 'specs/phptravels/*spec.js',
+    testbed: 'TestBed/*spec.js',
   },
 
   onPrepare: function() {
